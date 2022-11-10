@@ -1,0 +1,24 @@
+header {
+  background-color: #0000ff;
+  grid-area: a;
+}
+aside {
+  background-color: aqua;
+  grid-area: b;
+  display: flex; flex-direction: column;
+}
+main {
+  background-color: chartreuse;
+  grid-area: c;
+}
+footer {
+  background-color: lightseagreen;
+  grid-area: d;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "a a a a a a"
+    "b c c c c c"
+    "d d d d d d";
+}
