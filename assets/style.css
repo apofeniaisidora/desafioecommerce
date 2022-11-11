@@ -1,24 +1,30 @@
+body{min-width: 100vh; margin: 0; background-color: black;}
 header {
-  background-color: #0000ff;
-  grid-area: a;
+  background-color: #77664d;
+  grid-area: a; padding: 1%;
 }
 aside {
-  background-color: aqua;
+  background-color: rgb(119, 138, 106);
   grid-area: b;
-  display: flex; flex-direction: column;
+  display: flex; flex-direction: column; padding: 10%;
 }
 main {
-  background-color: chartreuse;
+  background-color:rgb(161, 135, 110);
   grid-area: c;
 }
 footer {
-  background-color: lightseagreen;
-  grid-area: d;
+  background-color: rgb(153, 110, 79);
+  grid-area: d; padding: 1%;
 }
 .container {
   display: grid;
   grid-template-areas:
-    "a a a a a a"
-    "b c c c c c"
-    "d d d d d d";
-}
+    "a a a a a a a"
+    "b b c c c c c"
+    "b b c c c c c"
+    "d d d d d d d";
+    margin: 0px;
+} 
+.contenedorcartas { display:flex; flex-wrap: wrap; gap:1vh}
+.card{margin:3vh;}
+.card-body {background-color: #635642;}
