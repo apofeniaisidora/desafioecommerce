@@ -1,19 +1,21 @@
-body{min-width: 100vh; margin: 0; background-color: black;}
+body{min-width: 100vh; margin: 0;}
 header {
-  background-color: #77664d;
+  background-color:salmon; color:beige;
   grid-area: a; padding: 1%;
+  text-align: center;
 }
 aside {
-  background-color: rgb(119, 138, 106);
+  background-color:indianred; color:beige;
   grid-area: b;
   display: flex; flex-direction: column; padding: 10%; min-height: 100vh;}
 main {
-  background-color:rgb(168, 152, 137);
+  background-color:bisque;
   grid-area: c;
 }
 footer {
-  background-color: rgb(119, 82, 56);
-  grid-area: d; padding: 1%;
+  background-color:salmon;
+  grid-area: d; padding: 1%;text-align: center;
+  color:beige;
 }
 .contenedor {
   display: grid;
@@ -24,5 +26,6 @@ footer {
   "d d d d d d d";
 } 
 .contenedorcartas { display:flex; flex-wrap: wrap; gap:1vh}
-.card{margin:3vh;}
-.card-body {background-color: #a19364;}
+.card{margin:3vh; text-align: center;  color:beige;}
+.card-body {background-color: lightsalmon;}
+.boton {background-color:salmon; padding: 1vh; text-align: center;  color:beige;}
